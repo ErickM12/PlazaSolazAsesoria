@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Aprende JavaScript</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../assets/img/logoP.png" type="image/x-icon">
+    </head>
+    <body>
+        <section>
+            <article>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <form method="POST" action="" role="form">
+                                <div class="form-group">
+                                    <label>Nombre completo:<i class="text-danger">*</i></label>
+                                    <input type="text" id="name" name="name" class="form-control" value="Erick"/>
+                                </div>
+                                <div class="form-group">
+                                    <label>Fecha de nacimiento:<i class="text-danger">*</i></label>
+                                    <input type="date" id="birthday" name="birthday" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Comentarios:</label>
+                                    <textarea rows="3" id="message" name="message" class="form-control"></textarea>
+                                </div>
+                                <div class="text-right">
+                                    <button type="button" class="btn btn-outline-success" onclick="formContact()">Iniciar sesión</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h1 class="text-center">Suma<i class="text-danger">(+)</i></h1>
+                            <hr class="bg-danger" />
+                            <form>
+                                <div class="form-group">
+                                    <label>Número 1:</label>
+                                    <input type="number" id="sumaNum1" name="sumaNum1" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Número 2:</label>
+                                    <input type="number" id="sumaNum2" name="sumaNum2" class="form-control">
+                                </div>
+                                <div class="text-right">
+                                    <button type="button" class="btn btn-outline-success" onclick="suma()">Sumar</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <h1 class="text-center">Resta<i class="text-danger">(-)</i></h1>
+                            <hr class="bg-danger" />
+                            <form>
+                                <div class="form-group">
+                                    <label>Número 1:</label>
+                                    <input type="number" id="restaNum1" name="restaNum1" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Número 2:</label>
+                                    <input type="number" id="restaNum2" name="restaNum2" class="form-control">
+                                </div>
+                                <div class="text-right">
+                                    <button class="btn btn-outline-success" onclick="resta()">Restar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h1 class="text-center">Multiplicación<i class="text-danger">(*)</i></h1>
+                            <hr class="bg-danger" />
+                            <form>
+                                <div class="form-group">
+                                    <label>Número 1:</label>
+                                    <input type="number" id="multiplicacionNum1" name="multiplicacionNum1" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Número 2:</label>
+                                    <input type="number" id="multiplicacionNum2" name="multiplicacionNum2" class="form-control">
+                                </div>
+                                <div class="text-right">
+                                    <button class="btn btn-outline-success" onclick="multiplicar()">Multiplicar</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <h1 class="text-center">División<i class="text-danger">(/)</i></h1>
+                            <hr class="bg-danger" />
+                            <form>
+                                <div class="form-group">
+                                    <label>Número 1:</label>
+                                    <input type="number" id="divisionNum1" name="divisionNum1" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Número 2:</label>
+                                    <input type="number" id="divisionNum2" name="divisionNum2" class="form-control">
+                                </div>
+                                <div class="text-right">
+                                    <button class="btn btn-outline-success" onclick="division()">Sumar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <script src="../js/learnJavaScript.js"></script>
+    </body>
+</html>

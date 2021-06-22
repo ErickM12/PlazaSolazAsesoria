@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulbasaur</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../../assets/img/logoP.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#home"><img class="img-fluid bg-transparent" width="50" height="50"
+                src="../../assets/img/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="navbar-toggler-icon"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../../index.html#home">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html#about">Acerca de nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html#contact">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../learnDiv.html">Aprende Div</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../learnBootstrap.html">Aprende Bootstrap</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../pokemon.html">Pokemones</a>
+                </li>
+               
+
+            </ul>
+            <ul class="navbar-nav">
+                <li>
+                    <img class="border border-danger rounded-circle" height="40" width="40"
+                        src="../../assets/img/perfil.png">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info">Erick Mireles Merchant</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <section id="pokemon">
+        <article>
+            <div class="container-fluid">
+                <div class="row">
+                    <div style="margin-bottom: 50px;" class="col-12 text-center">
+                        <h1>Bulbasaur N.º001</h1>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <figure class="text-right">
+                            <img style="background-color: #f2f2f2;"
+                                src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" />
+                        </figure>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <p id="ballBlue" class="font-italic">Este Pokémon nace con una semilla en el lomo, que brota con
+                            el paso del
+                            tiempo.</p>
+                        <p  id="ballRed" class="font-italic">Desde que nace, crece alimentándose de los nutrientes que
+                            contiene la semilla de su lomo.</p>
+                        <p>Versiones:
+                            <i onclick="viewBallBlue()"  data-feather="disc" class="text-primary"></i>
+                            <i onclick="viewBallRed()"  data-feather="disc" class="text-danger"></i>
+                        </p>
+                        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label>Altura</label>
+                                            <p style="font-weight: bold;" class="text-dark">0,6</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Peso</label>
+                                            <p style="font-weight: bold;" class="text-dark">08,5kg</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Sexo</label>
+                                            <p style="font-weight: bold;" class="text-dark"><i class="text-dark"
+                                                    data-feather="user"></i> <i class="text-dark"
+                                                    data-feather="heart"></i></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label>Categoría</label>
+                                            <p style="font-weight: bold;" class="text-dark">0,6</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Habilidades</label>
+                                            <p style="font-weight: bold;" class="text-dark">Mar llamas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <form action="" method="" role="form">
+                        <div class="form-group">
+                            <label>Nombre:<i class="text-danger">*</i></label>
+                            <input class="form-control" id="name" type="text"  />
+                        </div>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-success" onclick="createUser()">
+                                Registrar usuario
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace()
+    </script>
+    <script src="../../js/learnJavaScript.js"></script>
+</body>
+
+</html>
